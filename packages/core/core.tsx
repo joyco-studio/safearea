@@ -7,7 +7,7 @@ const SafeAreaComponent = (ref: RefObject<HTMLDivElement>) => {
     const { visibility } = style || {}
 
     if (visibility) {
-      console.warn('BoundsArea: style properties override. Avoid passing visibility property.')
+      console.warn('SafeArea: style properties override. Avoid passing visibility property.')
     }
 
     return (
