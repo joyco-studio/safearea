@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      use-measure:
+        specifier: '>=0.3.0'
+        version: 0.3.0(react@18.3.1)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.11
@@ -3027,7 +3031,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /read-yaml-file@1.1.0:
     resolution: {integrity: sha512-VIMnQi/Z4HT2Fxuwg5KrY174U1VdUIASQVWXXyqtNRtxSr9IYkn1rsI6Tb6HsrHCmB7gVpNwX6JxPTHcH6IoTA==}
@@ -3656,6 +3659,15 @@ packages:
       react: ^16.8.0
     dependencies:
       react: 16.14.0
+      resize-observer-polyfill: 1.5.1
+    dev: false
+
+  /use-measure@0.3.0(react@18.3.1):
+    resolution: {integrity: sha512-HohD5JGamEaNVN6dUM+pfVBUCblIVk8poTZgTTNTA+hd0TXHMazfBQS8SSb+L4ejlIg+CD3yzkPZDL4Y5A1LlA==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      react: 18.3.1
       resize-observer-polyfill: 1.5.1
     dev: false
 
