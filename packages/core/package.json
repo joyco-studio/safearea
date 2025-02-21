@@ -6,8 +6,5 @@
   "private": true,
   "changeset": {
     "ignore": true
-  },
-  "dependencies": {
-    "use-measure": "^0.3.0"
   }
 }

@@ -49,5 +49,8 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "use-measure": "0.3.0"
   }
 }
