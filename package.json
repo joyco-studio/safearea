@@ -1,11 +1,11 @@
 {
-  "name": "@joycostudio/generic",
+  "name": "@joycostudio/safearea",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "version": "0.1.1",
-  "description": "The generic template library starter from joyco.studio",
+  "version": "0.0.0",
+  "description": "Keep elements contained inside a safe area.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -19,7 +19,6 @@
     }
   },
   "scripts": {
-    "setup:template": "node setup.mjs",
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
