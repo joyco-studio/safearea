@@ -11,7 +11,6 @@ export default defineConfig([
     clean: true,
     treeshake: true,
     minify: false,
-    external: ['react', '@joycostudio/safearea'],
-    noExternal: ['use-measure'],
+    external: ['react', '@joycostudio/safearea', 'use-measure'],
   },
 ])
