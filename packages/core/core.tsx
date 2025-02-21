@@ -2,7 +2,7 @@
 import { RefObject, useMemo, useRef } from 'react'
 import useMeasure from 'use-measure'
 
-const BoundsComponent = (ref: RefObject<HTMLDivElement>) => {
+const SafeAreaComponent = (ref: RefObject<HTMLDivElement>) => {
   return ({ debug = false, style, ...props }: React.HTMLAttributes<HTMLDivElement> & { debug?: boolean }) => {
     const { visibility } = style || {}
 
@@ -43,10 +43,10 @@ export const useContainedBounds = (dimensions: { width: number; height: number }
     resolvedWidth = (bounds.height / dimensions.height) * dimensions.width
   }
 
-  const BoundsArea = useMemo(() => BoundsComponent(boundsRef), [])
+  const SafeArea = useMemo(() => SafeAreaComponent(boundsRef), [])
 
   return {
-    BoundsArea,
+    SafeArea,
     containedWidth: resolvedWidth,
     containedHeight: resolvedHeight,
   }
