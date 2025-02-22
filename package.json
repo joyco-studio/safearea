@@ -51,6 +51,6 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "use-measure": "0.3.0"
+    "resize-observer-polyfill": "^1.5.1"
   }
 }

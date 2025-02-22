@@ -1,6 +1,6 @@
 /* eslint-disable react-compiler/react-compiler */
 import { RefObject, useMemo, useRef } from 'react'
-import useMeasure from 'use-measure'
+import useMeasure from './use-measure'
 
 const SafeAreaComponent = (ref: RefObject<HTMLDivElement>) => {
   return ({ debug = false, style, ...props }: React.HTMLAttributes<HTMLDivElement> & { debug?: boolean }) => {
