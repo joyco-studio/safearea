@@ -24,11 +24,11 @@ const SafeAreaComponent = (ref: RefObject<HTMLDivElement>) => {
   }
 }
 
-export const useContainedBounds = (dimensions: { width: number; height: number }) => {
+export const useContainedBounds = (elmSize: { width: number; height: number }) => {
   const boundsRef = useRef<HTMLDivElement>(null)
   const bounds = useMeasure(boundsRef)
 
-  const mediaAspectRatio = dimensions.width / dimensions.height
+  const mediaAspectRatio = elmSize.width / elmSize.height
   const boundsAspectRatio = bounds.width / bounds.height
 
   let resolvedWidth, resolvedHeight
@@ -36,11 +36,11 @@ export const useContainedBounds = (dimensions: { width: number; height: number }
   if (mediaAspectRatio > boundsAspectRatio) {
     // Scale by width
     resolvedWidth = bounds.width
-    resolvedHeight = (bounds.width / dimensions.width) * dimensions.height
+    resolvedHeight = (bounds.width / elmSize.width) * elmSize.height
   } else {
     // Scale by height
     resolvedHeight = bounds.height
-    resolvedWidth = (bounds.height / dimensions.height) * dimensions.width
+    resolvedWidth = (bounds.height / elmSize.height) * elmSize.width
   }
 
   const SafeArea = useMemo(() => SafeAreaComponent(boundsRef), [])
