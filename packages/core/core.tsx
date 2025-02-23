@@ -51,5 +51,5 @@ export const useContainedBounds = (elmSize: { width: number; height: number }) =
       width: resolvedWidth,
       height: resolvedHeight,
     },
-  ]
+  ] as const
 }
