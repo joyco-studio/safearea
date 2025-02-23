@@ -45,9 +45,11 @@ export const useContainedBounds = (dimensions: { width: number; height: number }
 
   const SafeArea = useMemo(() => SafeAreaComponent(boundsRef), [])
 
-  return {
+  return [
     SafeArea,
-    containedWidth: resolvedWidth,
-    containedHeight: resolvedHeight,
-  }
+    {
+      width: resolvedWidth,
+      height: resolvedHeight,
+    },
+  ]
 }
