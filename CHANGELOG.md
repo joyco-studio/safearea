@@ -1,5 +1,11 @@
 # @joycostudio/safearea
 
+## 0.0.3
+
+### Patch Changes
+
+- f00e3f6: Refactor useContainedBounds return type and inner naming
+
 ## 0.0.2
 
 ### Patch Changes
