@@ -1,5 +1,11 @@
 # @joycostudio/safearea
 
+## 0.0.5
+
+### Patch Changes
+
+- cdc9c80: remove visibility from default styles
+
 ## 0.0.4
 
 ### Patch Changes
