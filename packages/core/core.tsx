@@ -4,17 +4,10 @@ import useMeasure from './use-measure'
 
 const SafeAreaComponent = (ref: RefObject<HTMLDivElement>) => {
   return ({ debug = false, style, ...props }: React.HTMLAttributes<HTMLDivElement> & { debug?: boolean }) => {
-    const { visibility } = style || {}
-
-    if (visibility) {
-      console.warn('SafeArea: style properties override. Avoid passing visibility property.')
-    }
-
     return (
       <div
         {...props}
         style={{
-          visibility: debug ? 'visible' : 'hidden',
           background: debug ? 'rgba(255, 0, 0, 0.25)' : undefined,
           ...style,
         }}
